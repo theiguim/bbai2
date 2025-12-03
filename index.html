@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BitBloom AI - Software House especializada em IA e Sistemas.">
+    <title>BitBloom AI | Inove. Floresça.</title>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-left">
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="BitBloom AI Logo">
+            </a>
+            <nav class="nav-desktop">
+                <a href="#services">Expertise</a>
+                <a href="#products">Produtos</a>
+                <a href="#portfolio">Cases</a>
+                <a href="#company">Sobre</a>
+            </nav>
+        </div>
+        <div class="header-right">
+            <a href="https://wa.me/5532999526526" target="_blank" class="try-btn">Fazer Orçamento</a>
+            <div class="mobile-menu-icon">☰</div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-video-wrapper">
+            <video autoplay muted loop playsinline poster="images/preview.png">
+                <source src="images/hero-video.mp4" type="video/mp4">
+                Seu navegador não suporta vídeos.
+            </video>
+            <div class="video-tint"></div>
+            <div class="video-fade-gradient"></div>
+        </div>
+
+        <div class="hero-content">
+            <h1 class="hero-title">Inove. Floresça.</h1>
+            <a href="https://wa.me/5532999526526" target="_blank" class="input-mockup">
+                <span class="input-text">Como podemos inovar o seu negócio?</span>
+                <div class="input-icon">
+                    <i data-lucide="arrow-right"></i>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="services" class="services-ref">
+        <span class="tag-bracket">Nossos Serviços</span>
+        <h2 class="services-headline">Engenharia de software<br>com design invisível.</h2>
+
+        <div class="services-grid-lines">
+            <div class="service-col">
+                <h3>Web Development</h3>
+                <p>Sites que carregam instantaneamente. Focados em retenção e conversão, usando Next.js e React.</p>
+                <div class="wireframe-visual">
+                    <div class="wf-window">
+                        <div class="wf-header">
+                            <div class="wf-dot red"></div>
+                            <div class="wf-dot yellow"></div>
+                            <div class="wf-dot green"></div>
+                        </div>
+                        <div class="wf-content">
+                            <div class="wf-bar w-40"></div>
+                            <div class="wf-bar w-70"></div>
+                            <div class="wf-bar w-55"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-link">Saber mais <i data-lucide="arrow-up-right"></i></div>
+            </div>
+
+            <div class="service-col">
+                <h3>Automações & IA</h3>
+                <p>Seus processos rodando no piloto automático. Chatbots inteligentes e integrações via API.</p>
+                <div class="wireframe-visual">
+                    <div class="wf-circle"></div>
+                    <div class="wf-line-diagonal"></div>
+                </div>
+                <div class="bottom-link">Automatizar <i data-lucide="arrow-up-right"></i></div>
+            </div>
+
+            <div class="service-col">
+                <h3>Sistemas Custom</h3>
+                <p>Arquitetura robusta para problemas complexos. Do banco de dados à interface do usuário.</p>
+                <div class="wireframe-visual">
+                    <div class="wf-doc back"></div>
+                    <div class="wf-doc front">
+                        <div class="wf-content">
+                            <div class="wf-bar w-30 h-3"></div>
+                            <div class="wf-bar w-80 h-3 mt-20"></div>
+                            <div class="wf-bar w-80 h-3"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-link">Iniciar projeto <i data-lucide="arrow-up-right"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="products" class="apple-section"> -->
+
+
+    <section id="products" class="products">
+        <div class="section-header-center">
+            <span class="tag-bracket">Portfólio de Produtos</span>
+            <h2 class="section-title">Construído para escalar.</h2>
+        </div>
+
+        <div class="product-container-wrapper">
+            <div class="product-content" style="background-image: url(images/products/omni.png);">
+                <!-- <h1>Omni Healthy</h1> -->
+                <p>Plataforma médica com inteligência artificial para transcrever consultas, gerar prontuários, receitas
+                    e atestados. Integra agenda, histórico de pacientes e monitoramento em gráficos de forma prática e
+                    segura.</p>
+                <div class="nav-btn">
+                    <a href="https://orquestra-med.vercel.app/" target="_blank"> <button>Acessar plataforma</button></a>
+
+                    <!-- ir para landing page -->
+                    <button class="alt-btn">Saiba mais</button>
+                </div>
+            </div>
+
+            <div class="product-content" style="background-image: url(images/products/todentro.png);">
+                <!-- <h1>Tô Dentro</h1> -->
+                <p>Uma plataforma de check-in digital para eventos, reuniões e atividades. Simples, rápida e eficiente,
+                    permite confirmar presenças via QR Code e otimizar a gestão dos seus participantes.</p>
+                <div class="nav-btn">
+                    <a href="https://to-dentro-react.vercel.app/" target="_blank"> <button>Acessar
+                            Plataforma</button></a>
+                    <!-- <button class="alt-btn">Contatar</button> -->
+                </div>
+            </div>
+
+            <div class="product-content" style="background-image: url(images/products/falamecanico.png);">
+                <!-- <h1>Fala Mecânico</h1> -->
+                <p>Um chatbot no WhatsApp disponível 24h para mecânicos. Tire dúvidas técnicas em segundos, sem esperar
+                    oficina abrir ou perder tempo em vídeos confusos na internet.</p>
+                <div class="nav-btn">
+                    <button>Acessar</button>
+                    <a href="https://falamecanico.vercel.app/" target="_blank"><button class="alt-btn">Saiba
+                            mais</button></a>
+                </div>
+            </div>
+
+            <div class="product-content" style="background-image: url(images/products/forneria.png);">
+                <!-- <h1>Forneria Delivery</h1> -->
+                <p>Sistema de pedidos online exclusivo para pizzarias. Os clientes escolhem, pedem e enviam direto para
+                    o balcão, agilizando o atendimento e aumentando as vendas.</p>
+                <div class="nav-btn">
+                    <a href="" target="_blank"> <button>Acessar plataforma</button></a>
+                    <button class="alt-btn">Contatar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio-section">
+        <div class="section-header-center">
+            <span class="section-tag">Portfólio</span>
+            <h1 class="section-headline">+ 30 cases de sucesso.</h1>
+            <p class="section-subhead">Empresas que confiam na nossa tecnologia para inovar.</p>
+        </div>
+        <div class="portfolio-img-wrapper">
+            <img class="portf-img" src="images/port.png" alt="Logos dos clientes BitBloom AI">
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <div class="gallery-header">
+            <div>
+                <span class="tag-bracket">Selected Works</span>
+                <h2 class="gallery-title">Galeria de Projetos.</h2>
+            </div>
+            <div class="scroll-hint">
+                <div class="scroll-line"></div>
+                Drag / Scroll
+                <i data-lucide="arrow-right" class="icon-small"></i>
+            </div>
+        </div>
+
+        <div class="gallery-wrapper">
+
+            <button class="gallery-nav-btn prev" aria-label="Scroll Left">
+                <i data-lucide="chevron-left"></i>
+            </button>
+
+            <div class="gallery-track">
+                <a href="https://www.legendarioslascampanas.com" target="_blank" class="project-poster">
+                    <img class="poster-img" src="images/works/lgnd.png" alt="Legendários">
+                    <div class="poster-info">
+                        <p class="poster-cat">E-Commerce</p>
+                        <h3 class="poster-title">Legendários Las Campanas</h3>
+                    </div>
+                </a>
+
+                <a href="https://fg360transportes.com.br/" target="_blank" class="project-poster">
+                    <img class="poster-img" src="images/works/fg.png" alt="FG360">
+                    <div class="poster-info">
+                        <p class="poster-cat">Logística</p>
+                        <h3 class="poster-title">FG360 Transportes</h3>
+                    </div>
+                </a>
+
+                <a href="https://blackbrian.com/" target="_blank" class="project-poster">
+                    <img class="poster-img" src="images/works/bb.png" alt="Black Brian">
+                    <div class="poster-info">
+                        <p class="poster-cat">Marketing Digital</p>
+                        <h3 class="poster-title">Black Brian</h3>
+                    </div>
+                </a>
+
+                <a href="https://www.silvaneves.com.br/" target="_blank" class="project-poster">
+                    <img class="poster-img" src="images/works/sn.png" alt="Silva Neves">
+                    <div class="poster-info">
+                        <p class="poster-cat">Jurídico</p>
+                        <h3 class="poster-title">Silva Neves Advocacia</h3>
+                    </div>
+                </a>
+            </div>
+
+            <button class="gallery-nav-btn next" aria-label="Scroll Right">
+                <i data-lucide="chevron-right"></i>
+            </button>
+
+        </div>
+    </section>
+
+    <footer class="bitbloom-footer">
+        <div class="footer-content">
+            <div class="footer-newsletter">
+                <h3>Receba novidades e atualizações da BitBloom AI</h3>
+                <p>Fique por dentro das nossas inovações em IA, novos produtos e conteúdos exclusivos. Assine nossa
+                    newsletter e junte-se à nossa comunidade.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Seu endereço de e-mail" required>
+                    <button type="submit">Assinar</button>
+                </form>
+                <p class="newsletter-disclaimer">Ao assinar, você concorda em receber nossos e-mails. Você pode cancelar
+                    a inscrição a qualquer momento.</p>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-links-section">
+                <div class="footer-brand-column">
+                    <a href="#" class="footer-logo">
+                        <img src="images/logo.png" alt="BitBloom AI Logo">
+                    </a>
+                    <p>CNPJ: 61.635.661/0001-88</p>
+                    <a href="mailto:bitbloomai@gmail.com" class="footer-email">bitbloomai@gmail.com</a>
+                    <div class="footer-socials">
+                        <a href="https://www.instagram.com/bitbloomai" target="_blank" aria-label="Instagram">
+                            <i data-lucide="instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/bitbloomai?_l=en_US" target="_blank" aria-label="LinkedIn">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                        <a href="https://www.facebook.com/bitbloomai" target="_blank" aria-label="Facebook">
+                            <i data-lucide="facebook"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-nav-column">
+                    <h3>Produtos</h3>
+                    <ul>
+                        <li><a href="#products">Omni Healthy</a></li>
+                        <li><a href="#products">Tô Dentro</a></li>
+                        <li><a href="#products">Fala Mecânico</a></li>
+                        <li><a href="#products">Forneria 360º</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-nav-column">
+                    <h3>Navegação</h3>
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="#portfolio">Portfólio</a></li>
+                        <li><a href="#about">Sobre Nós</a></li>
+                        <li><a href="https://wa.me/5532999526526?text=Olá%2C%20gostaria%20de%20um%20suporte..."
+                                target="_blank">Suporte</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact-column">
+                    <h3>Contato</h3>
+                    <p>Pronto para inovar? <br> Fale com nossos especialistas.</p>
+                    <button class="footer-btn"><a
+                            href="https://wa.me/5532999526526?text=Olá%2C%20gostaria%20de%20fazer%20um%20orçamento..."
+                            target="_blank" class="footer-contact-btn">
+                            Entrar em contato
+                        </a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; 2025 BitBloom AI. Todos os direitos reservados.</p>
+                <p class="footer-tagline">Inove. Floresça.</p>
+                <!-- <div class="footer-legal-links">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div> -->
+            </div>
+        </div>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+    <script src="script.js"></script>
+</body>
+
+</html>
