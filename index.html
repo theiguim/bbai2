@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="BitBloom AI - Software House especializada em IA e Sistemas.">
     <title>BitBloom AI | Inove. Floresça.</title>
 
@@ -20,7 +21,7 @@
     <header>
         <div class="header-left">
             <a href="#" class="logo">
-                <img src="images/logo.png" alt="BitBloom AI Logo">
+                <img src="images/logo-w.png" alt="BitBloom AI Logo">
             </a>
             <nav class="nav-desktop">
                 <a href="#services">Expertise</a>
@@ -29,9 +30,32 @@
                 <a href="#company">Sobre</a>
             </nav>
         </div>
+
         <div class="header-right">
-            <a href="https://wa.me/5532999526526" target="_blank" class="try-btn">Fazer Orçamento</a>
-            <div class="mobile-menu-icon">☰</div>
+            <a style="cursor: pointer;" onclick="toggleLeadForm()" class="try-btn desktop-only">Fazer Orçamento</a>
+
+            <div class="mobile-menu-icon" id="mobileMenuBtn">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </div>
+        </div>
+
+        <div class="mobile-menu-overlay" id="mobileMenu">
+            <nav class="mobile-nav-content">
+                <a href="#services" onclick="toggleMenu()">Expertise</a>
+                <a href="#products" onclick="toggleMenu()">Produtos</a>
+                <a href="#portfolio" onclick="toggleMenu()">Cases</a>
+                <a href="#company" onclick="toggleMenu()">Sobre</a>
+
+                <a style="cursor: pointer;" onclick="toggleLeadForm()" class="mobile-cta-btn">
+                    Fazer Orçamento
+                </a>
+            </nav>
+
+            <div class="mobile-menu-footer">
+                <a href="#" onclick="toggleMenu()"><img src="images/logo.png" alt="BitBloom Logo Small"></a>
+            </div>
         </div>
     </header>
 
@@ -47,12 +71,12 @@
 
         <div class="hero-content">
             <h1 class="hero-title">Inove. Floresça.</h1>
-            <a href="https://wa.me/5532999526526" target="_blank" class="input-mockup">
+            <div class="input-mockup" onclick="toggleLeadForm()" style="cursor: pointer;">
                 <span class="input-text">Como podemos inovar o seu negócio?</span>
                 <div class="input-icon">
                     <i data-lucide="arrow-right"></i>
                 </div>
-            </a>
+            </div>
         </div>
     </section>
 
@@ -109,7 +133,44 @@
         </div>
     </section>
 
-    <!-- <section id="products" class="apple-section"> -->
+
+
+
+    
+    <section class="scroll-fx-section" id="scrollFxSection">
+
+        <div class="fx-text-container left">
+            <h2 class="fx-text" id="textLeft">
+               
+                <span class="text-highlight">Inove.</span>
+            </h2>
+        </div>
+
+        <div class="fx-center-stage">
+            <div class="fx-aura"></div>
+
+            <div class="fx-logo-wrapper" id="logo3d">
+                <img src="images/logo-3d.png" alt="BitBloom Logo" class="fx-logo-img front">
+                <img src="images/logo-3d.png" alt="" class="fx-logo-img back">
+            </div>
+        </div>
+
+        <div class="fx-text-container right">
+            <h2 class="fx-text" id="textRight">
+               
+                <span class="text-highlight">Floresça.</span>
+            </h2>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
 
 
     <section id="products" class="products">
@@ -119,11 +180,10 @@
         </div>
 
         <div class="product-container-wrapper">
-            <div class="product-content" style="background-image: url(images/products/omni.png);">
-                <!-- <h1>Omni Healthy</h1> -->
-                <p>Plataforma médica com inteligência artificial para transcrever consultas, gerar prontuários, receitas
-                    e atestados. Integra agenda, histórico de pacientes e monitoramento em gráficos de forma prática e
-                    segura.</p>
+            <div class="product-content" style="background-image: url(images/products/1-min.png);">
+                <h1>Omni Healthy</h1>
+                <p>Plataforma médica com inteligência artificial integrada com gestão de pacientes e transcrição de
+                    consultas.</p>
                 <div class="nav-btn">
                     <a href="https://orquestra-med.vercel.app/" target="_blank"> <button>Acessar plataforma</button></a>
 
@@ -132,10 +192,10 @@
                 </div>
             </div>
 
-            <div class="product-content" style="background-image: url(images/products/todentro.png);">
-                <!-- <h1>Tô Dentro</h1> -->
-                <p>Uma plataforma de check-in digital para eventos, reuniões e atividades. Simples, rápida e eficiente,
-                    permite confirmar presenças via QR Code e otimizar a gestão dos seus participantes.</p>
+            <div class="product-content" style="background-image: url(images/products/2-min.png);">
+                <h1>Tô Dentro</h1>
+                <p>Uma plataforma de check-in digital para eventos, reuniões e atividades.
+                </p>
                 <div class="nav-btn">
                     <a href="https://to-dentro-react.vercel.app/" target="_blank"> <button>Acessar
                             Plataforma</button></a>
@@ -143,10 +203,10 @@
                 </div>
             </div>
 
-            <div class="product-content" style="background-image: url(images/products/falamecanico.png);">
-                <!-- <h1>Fala Mecânico</h1> -->
-                <p>Um chatbot no WhatsApp disponível 24h para mecânicos. Tire dúvidas técnicas em segundos, sem esperar
-                    oficina abrir ou perder tempo em vídeos confusos na internet.</p>
+            <div class="product-content" style="background-image: url(images/products/3-min.png);">
+                <h1>Fala Mecânico</h1>
+                <p>Tire dúvidas técnicas em segundos através do
+                    whatsapp 24 horas por dia.</p>
                 <div class="nav-btn">
                     <button>Acessar</button>
                     <a href="https://falamecanico.vercel.app/" target="_blank"><button class="alt-btn">Saiba
@@ -154,10 +214,9 @@
                 </div>
             </div>
 
-            <div class="product-content" style="background-image: url(images/products/forneria.png);">
-                <!-- <h1>Forneria Delivery</h1> -->
-                <p>Sistema de pedidos online exclusivo para pizzarias. Os clientes escolhem, pedem e enviam direto para
-                    o balcão, agilizando o atendimento e aumentando as vendas.</p>
+            <div class="product-content" style="background-image: url(images/products/4-min.png);">
+                <h1>Forneria Delivery</h1>
+                <p>Sistema de pedidos e gestão online exclusivo para pizzarias. </p>
                 <div class="nav-btn">
                     <a href="" target="_blank"> <button>Acessar plataforma</button></a>
                     <button class="alt-btn">Contatar</button>
@@ -185,7 +244,7 @@
             </div>
             <div class="scroll-hint">
                 <div class="scroll-line"></div>
-                Drag / Scroll
+                Arraste / Scroll
                 <i data-lucide="arrow-right" class="icon-small"></i>
             </div>
         </div>
@@ -228,6 +287,14 @@
                         <h3 class="poster-title">Silva Neves Advocacia</h3>
                     </div>
                 </a>
+
+                <a href="https://blackbrian.com/" target="_blank" class="project-poster">
+                    <img class="poster-img" src="images/works/bb.png" alt="Black Brian">
+                    <div class="poster-info">
+                        <p class="poster-cat">Marketing Digital</p>
+                        <h3 class="poster-title">Black Brian</h3>
+                    </div>
+                </a>
             </div>
 
             <button class="gallery-nav-btn next" aria-label="Scroll Right">
@@ -240,15 +307,34 @@
     <footer class="bitbloom-footer">
         <div class="footer-content">
             <div class="footer-newsletter">
-                <h3>Receba novidades e atualizações da BitBloom AI</h3>
-                <p>Fique por dentro das nossas inovações em IA, novos produtos e conteúdos exclusivos. Assine nossa
-                    newsletter e junte-se à nossa comunidade.</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Seu endereço de e-mail" required>
-                    <button type="submit">Assinar</button>
+                <h3>Alguma dúvida?</h3>
+                <p>Preencha os dados abaixo e nossa equipe entrará em contato para discutir como podemos inovar o seu
+                    negócio.</p>
+
+                <form class="newsletter-form contact-expanded">
+
+                    <div class="form-row">
+                        <div class="input-group">
+                            <input type="text" placeholder="Seu nome" required class="form-input">
+                        </div>
+
+                        <div class="input-group">
+                            <input type="tel" placeholder="WhatsApp" required class="form-input">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="email" placeholder="Seu e-mail corporativo" required class="form-input">
+                    </div>
+
+                    <div class="input-group">
+                        <textarea placeholder="Como podemos ajudar?" rows="3" required class="form-input"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Enviar Solicitação</button>
                 </form>
-                <p class="newsletter-disclaimer">Ao assinar, você concorda em receber nossos e-mails. Você pode cancelar
-                    a inscrição a qualquer momento.</p>
+
+                <p class="newsletter-disclaimer">Seus dados estão seguros conosco. Responderemos em até 24h úteis.</p>
             </div>
 
             <div class="footer-divider"></div>
@@ -319,8 +405,141 @@
         </div>
     </footer>
 
+
+    <div class="lead-overlay" id="leadOverlay">
+
+        <div class="lead-close" onclick="toggleLeadForm()">
+            <span class="close-x-bar"></span>
+            <span class="close-x-bar"></span>
+        </div>
+
+        <div class="lead-container">
+            <div class="lead-header">
+                <img src="images/logo.png" alt="Logo bit Bloom" class="logo-lead-content">
+                <h2>Vamos construir o futuro.</h2>
+                <p>Conte-nos sobre o seu desafio. Nossa equipe de engenharia analisará sua demanda e retornará com uma
+                    proposta técnica em até 24h.</p>
+            </div>
+
+            <form class="lead-form">
+
+                <label class="section-label">Qual o foco do projeto?</label>
+                <div class="service-selection-grid">
+                    <input type="radio" name="service" id="srv-web" value="web" class="hidden-radio" checked>
+                    <label class="service-card-select" for="srv-web">
+                        <i data-lucide="layout-template"></i>
+                        <span>Web / Plataforma</span>
+                    </label>
+
+                    <input type="radio" name="service" id="srv-app" value="app" class="hidden-radio">
+                    <label class="service-card-select" for="srv-app">
+                        <i data-lucide="smartphone"></i>
+                        <span>Mobile App</span>
+                    </label>
+
+                    <input type="radio" name="service" id="srv-ai" value="ai" class="hidden-radio">
+                    <label class="service-card-select" for="srv-ai">
+                        <i data-lucide="bot"></i>
+                        <span>IA & Automação</span>
+                    </label>
+
+                    <input type="radio" name="service" id="srv-legacy" value="legacy" class="hidden-radio">
+                    <label class="service-card-select" for="srv-legacy">
+                        <i data-lucide="database"></i>
+                        <span>Sistemas/SaaS</span>
+                    </label>
+                </div>
+
+                <div class="form-grid-row">
+                    <div class="input-wrapper">
+                        <label>Seu Nome</label>
+                        <input type="text" placeholder="Nome completo" required class="clean-input">
+                    </div>
+                    <div class="input-wrapper">
+                        <label>WhatsApp</label>
+                        <input type="tel" placeholder="(DDD) 99999-9999" required class="clean-input">
+                    </div>
+                </div>
+
+                <div class="form-grid-row">
+                    <div class="input-wrapper">
+                        <label>E-mail Corporativo</label>
+                        <input type="email" placeholder="nome@suaempresa.com" required class="clean-input">
+                    </div>
+                    <div class="input-wrapper">
+                        <label>Nome da Empresa</label>
+                        <input type="text" placeholder="Nome empresa" class="clean-input">
+                    </div>
+                </div>
+
+                <div class="input-wrapper" style="margin-top: 1rem;">
+                    <label>Detalhes da Demanda</label>
+                    <textarea rows="3" placeholder="Descreva brevemente o que você precisa construir ou automatizar..."
+                        class="clean-input"></textarea>
+                </div>
+
+                <div class="input-wrapper" style="margin-top: 1rem;">
+                    <label>Estimativa de Investimento (Opcional)</label>
+                    <select class="clean-input select-arrow">
+                        <option value="" disabled selected>Selecione um intervalo</option>
+                        <option value="mvp">Até R$ 10k (MVP/Landing)</option>
+                        <option value="small">R$ 10k - R$ 30k (Sistemas Médios)</option>
+                        <option value="medium">R$ 30k - R$ 80k (Projetos Robustos)</option>
+                        <option value="enterprise">+ R$ 80k (Enterprise/IA Complexa)</option>
+                        <option value="undecided">Ainda não tenho orçamento definido</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="lead-submit-btn">
+                    Solicitar Análise Técnica <i data-lucide="arrow-right" style="width: 18px;"></i>
+                </button>
+
+                <p class="lead-footer-text">Seus dados estão protegidos sob NDA padrão.</p>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- form wpp -->
+    <div class="chat-widget-container">
+
+        <!-- Janela do Chat (Inicialmente oculta) -->
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">
+                <div class="chat-brand">
+                    <div class="chat-status-dot"></div>
+                    <span>Assistente BitBloom</span>
+                </div>
+                <!-- Botão Fechar (X Limpo) -->
+                <div class="chat-close" onclick="toggleChat()">
+                    <span></span><span></span>
+                </div>
+            </div>
+
+            <div class="chat-messages" id="chatMessages">
+                <!-- Mensagens serão inseridas aqui via JS -->
+            </div>
+
+            <div class="chat-input-area">
+                <input type="text" id="chatInput" placeholder="Digite sua resposta..." autocomplete="off">
+                <button id="chatSendBtn" onclick="processUserMessage()">
+                    <i data-lucide="send" style="width: 18px;"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Botão Flutuante (Trigger) -->
+        <button class="chat-trigger-btn" onclick="toggleChat()">
+            <i data-lucide="message-square"></i>
+        </button>
+    </div>
+
     <script>lucide.createIcons();</script>
     <script src="script.js"></script>
+
+
+
+
 </body>
 
 </html>
